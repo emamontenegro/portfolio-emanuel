@@ -1,0 +1,60 @@
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-label {
+  font-size: 0.75rem;
+  color: #9b9b9b;
+  letter-spacing: 0.05em;
+}
+
+.contact-value {
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.copy-btn {
+  margin-top: 0.6rem;
+  align-self: flex-start;
+
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+
+  padding: 0.35rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.copy-btn:hover {
+  background: rgba(180, 58, 237, 0.15);
+}
+
+.copy-btn.copied {
+  background: var(--color-primary);
+  color: #0e0e11;
+  border-color: var(--color-primary);
+}
+

@@ -1,0 +1,10 @@
+:root {
+  /* Fonts */
+  --font-heading: 'Orbitron', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Colors */
+  --color-bg: #0e0e11;
+  --color-primary: #b43aed;
+  --color-text: #eaeaea;
+}

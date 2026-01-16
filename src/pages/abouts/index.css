@@ -1,0 +1,32 @@
+.about {
+  padding: 5rem 1.5rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.about-text {
+  font-family: var(--font-body);
+  line-height: 1.7;
+  color: #cfcfcf;
+  font-size: 1rem;
+  max-width: 800px;
+}
+
+.about-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-cv {
+  align-self: flex-start;
+  margin-top: 3rem;
+}

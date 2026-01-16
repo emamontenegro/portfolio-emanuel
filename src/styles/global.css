@@ -1,0 +1,14 @@
+@import './reset.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Herr+Von+Muellerhoff&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Herr+Von+Muellerhoff&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+@import './variables.css';
+
+body {
+  margin: 0;
+  background-color: #0e0e11;
+  color: #eaeaea;
+  font-family: var(--font-body);
+}

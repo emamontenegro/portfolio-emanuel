@@ -1,0 +1,49 @@
+.contact {
+  min-height: calc(100vh - 120px);
+  padding: 4rem 1.5rem;
+}
+
+.contact .section-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  color: var(--color-text);
+  margin-bottom: 2.5rem;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.contact-intro {
+  max-width: 620px;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b5b5b5;
+}
+
+.contact-cards {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .contact .section-title {
+    font-size: 1.9rem;
+  }
+
+  .contact-intro {
+    font-size: 0.95rem;
+  }
+}

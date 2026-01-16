@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "Web Development",
+      "es": "Desarrollo Web"
+    },
+    "institution": "Coderhouse",
+    "year": "2025",
+    "image": "desarrollo-web.png"
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "JavaScript",
+      "es": "JavaScript"
+    },
+    "institution": "Coderhouse",
+    "year": "2025",
+    "image": "javascript.png"
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "React JS",
+      "es": "React JS"
+    },
+    "institution": "Coderhouse",
+    "year": "2025",
+    "image": "react-js.png"
+  }
+]

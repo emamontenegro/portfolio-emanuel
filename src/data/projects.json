@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "E-commerce Montenegro",
+    "description": {
+      "en": "E-commerce built with React JS including product catalog, search, categories, cart and mock order generation using Firebase.",
+      "es": "E-commerce desarrollado con React JS que incluye catálogo, buscador, categorías, carrito y generación de órdenes ficticias con Firebase."
+    },
+    "stack": ["React", "CSS", "Firebase"],
+    "image": "react-image.png",
+    "demo": "https://e-comerce-montenegro.vercel.app/",
+    "code": "https://github.com/emamontenegro/e-comerce-Montenegro"
+  },
+  {
+    "id": 2,
+    "title": "Recipe App",
+    "description": {
+      "en": "JavaScript web application that recommends daily recipes, allows search by meals and ingredients, and manages favorites.",
+      "es": "Aplicación web en JavaScript que recomienda recetas diarias, permite búsqueda por comidas e ingredientes y gestión de favoritos."
+    },
+    "stack": ["JavaScript", "CSS", "SweetAlert2"],
+    "image": "javascript-image.png",
+    "demo": "https://app-recetas-js.vercel.app/",
+    "code": "https://github.com/emamontenegro/app-recetas-js"
+  },
+  {
+    "id": 3,
+    "title": "Recreativo Grow",
+    "description": {
+      "en": "Responsive landing page built with HTML5, SASS and Bootstrap, focused on layout, design and page navigation.",
+      "es": "Landing page responsive desarrollada con HTML5, SASS y Bootstrap, enfocada en diseño, maquetado y navegación entre páginas."
+    },
+    "stack": ["HTML", "SASS", "Bootstrap"],
+    "image": "desarrollo-web-image.png",
+    "demo": "https://recreativo-grow.vercel.app/",
+    "code": "https://github.com/emamontenegro/Recreativo-Grow"
+  }
+]
