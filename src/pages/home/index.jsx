@@ -1,6 +1,7 @@
 import avatarBlack from "../../assets/avatar-black-cuadrado.png";
 import "./index.css";
 import { useLanguage } from "../../context/LanguageContext";
+import { NavLink } from "react-router";
 
 const Home = () => {
   const { t } = useLanguage();
@@ -27,13 +28,13 @@ const Home = () => {
           </p>
 
           <div className="hero-actions">
-            <a href="/projects" className="btn primary">
+            <NavLink to="/projects" className="btn primary">
               {t.home.buttons.projects}
-            </a>
+            </NavLink>
 
-            <a href="/contact" className="btn secondary">
+            <NavLink to="/contact" className="btn secondary">
               {t.home.buttons.contact}
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
