@@ -25,14 +25,18 @@
 .skill-card img {
   width: 42px;
   margin-bottom: 0.6rem;
-  filter: grayscale(100%);
-  opacity: 0.8;
-  transition: all 0.3s ease;
+  filter: grayscale(1) brightness(0.9);
+  opacity: 0.85;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .skill-card:hover img {
-  filter: grayscale(0);
+  filter: grayscale(0) brightness(1.2);
   opacity: 1;
+  transform: translateY(-2px);
 }
 
 .skill-card span {
@@ -40,3 +44,14 @@
   font-size: 0.9rem;
   color: var(--color-text);
 }
+
+.skill-card.github img {
+  filter: brightness(1.4);
+  opacity: 1;
+}
+
+.skill-card.github:hover img {
+  filter: brightness(2) drop-shadow(0 0 1px var(--color-primary));
+  transform: translateY(-2px);
+}
+

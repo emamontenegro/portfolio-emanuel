@@ -11,7 +11,8 @@ const Skills = () => {
 
       <div className="skills-grid">
         {skills.map((skill) => (
-          <div key={skill.name} className="skill-card">
+          <div key={skill.name}
+          className={`skill-card ${skill.name === "GitHub" ? "github" : ""}`}>
             <img src={skill.logo} alt={skill.name} />
             <span>{skill.name}</span>
           </div>

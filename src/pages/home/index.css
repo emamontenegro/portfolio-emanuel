@@ -122,7 +122,10 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 425px) {
+  .home {
+    margin-top: 11vh;
+  }
   .hero {
     grid-template-columns: 1fr;
     gap: 3rem;

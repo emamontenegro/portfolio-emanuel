@@ -21,12 +21,10 @@
 .cert-card {
   padding: 2rem;
   border-radius: 14px;
-
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
-
   transition: transform 0.3s ease, border-color 0.3s ease;
-  cursor: default;
+  cursor: pointer;
 }
 
 .cert-card:hover {
@@ -76,7 +74,7 @@
   color: #7a7a7a;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 425px) {
   .certifications-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;

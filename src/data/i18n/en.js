@@ -10,13 +10,20 @@ const en = {
 
   projects: {
     title: "Projects",
+    demo: "Live Demo",
+    code: "Source Code",
   },
-  
+
   contact: {
     title: "Contact",
     intro: "Do you have a job offer or project? I'm open to new opportunities.",
     copy: "Copy",
     copied: "Copied ✓",
+    whatsapp: {
+      label: "WhatsApp",
+      value: "Chat on WhatsApp",
+      message: "Hi Emanuel, I saw your portfolio and I'd like to get in touch."
+    }
   },
 
   about: {
@@ -33,13 +40,6 @@ const en = {
   skills: {
     title: "Technologies",
   },
-
-  projects: {
-    title: "Projects",
-    demo: "Live Demo",
-    code: "Source Code",
-  },
-
 };
 
 export default en;

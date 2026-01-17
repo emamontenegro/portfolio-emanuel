@@ -3,9 +3,14 @@ import ContactCard from "../../components/common/contact-card";
 import { useLanguage } from "../../context/LanguageContext";
 
 const EMAIL = "montenegroemanuel995@gmail.com";
+const PHONE = "543416084290";
 
 const Contact = () => {
   const { t } = useLanguage();
+
+  const whatsappLink = `https://wa.me/${PHONE}?text=${encodeURIComponent(
+    t.contact.whatsapp.message
+  )}`;
 
   return (
     <section className="contact">
@@ -34,6 +39,12 @@ const Contact = () => {
             label="GitHub"
             value="/emamontenegro"
             href="https://github.com/emamontenegro"
+          />
+
+          <ContactCard
+            label={t.contact.whatsapp.label}
+            value={t.contact.whatsapp.value}
+            href={whatsappLink}
           />
         </div>
       </div>

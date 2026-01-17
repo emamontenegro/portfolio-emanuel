@@ -10,13 +10,20 @@ const es = {
 
   projects: {
     title: "Proyectos",
+    demo: "Demo",
+    code: "Código",
   },
-  
+
   contact: {
     title: "Contacto",
     intro: "¿Tenés una propuesta laboral o proyecto? Estoy abierto a nuevas oportunidades.",
     copy: "Copiar",
     copied: "Copiado ✓",
+    whatsapp: {
+      label: "WhatsApp",
+      value: "Chatear por WhatsApp",
+      message: "Hola Emanuel, vi tu portfolio y me gustaría contactarte."
+    }
   },
 
   about: {
@@ -33,13 +40,6 @@ const es = {
   skills: {
     title: "Tecnologías",
   },
-
-  projects: {
-    title: "Proyectos",
-    demo: "Demo",
-    code: "Código",
-  },
-
 };
 
 export default es;
