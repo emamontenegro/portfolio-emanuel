@@ -1,4 +1,12 @@
 const en = {
+
+  header: {
+    home: "Home",
+    projects: "Projects",
+    about: "About",
+    contact: "Contact",
+  },
+  
   home: {
     description:
       "Frontend Developer with full stack web development training at CoderHouse. Specialized in building modern, responsive interfaces focused on user experience.",

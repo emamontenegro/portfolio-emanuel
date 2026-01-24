@@ -1,4 +1,12 @@
 const es = {
+  
+  header: {
+    home: "Inicio",
+    projects: "Proyectos",
+    about: "Sobre mí",
+    contact: "Contacto",
+  },
+  
   home: {
     description:
       "Frontend Developer con formación en desarrollo web full stack en CoderHouse. Especializado en la creación de interfaces modernas, responsivas y enfocadas en la experiencia de usuario.",

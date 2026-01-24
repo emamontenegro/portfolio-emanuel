@@ -1,5 +1,5 @@
 .about {
-  padding: 5rem 1.5rem;
+  padding: 4rem 1.5rem;
   background-color: var(--color-bg);
   color: var(--color-text);
 }
@@ -29,4 +29,11 @@
 .about-cv {
   align-self: flex-start;
   margin-top: 3rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-text);
+  margin-bottom: 2.5rem;
 }

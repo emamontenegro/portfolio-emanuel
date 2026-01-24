@@ -3,7 +3,7 @@ import { useLanguage } from "../../../context/LanguageContext";
 import "./index.css";
 
 const Header = () => {
-  const { lang, toggleLanguage } = useLanguage();
+  const { t, lang, toggleLanguage } = useLanguage();
 
   return (
     <header className="header">
@@ -13,19 +13,19 @@ const Header = () => {
 
       <nav className="nav">
         <NavLink to="/" end className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-          Home
+          {t.header.home}
         </NavLink>
 
         <NavLink to="/projects" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-          Projects
+          {t.header.projects}
         </NavLink>
 
         <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-          About
+          {t.header.about}
         </NavLink>
 
         <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-          Contact
+          {t.header.contact}
         </NavLink>
       </nav>
 
