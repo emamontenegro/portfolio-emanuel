@@ -2,10 +2,13 @@ import "./index.css";
 import Skills from "../../components/common/skills";
 import Certifications from "../../components/common/certifications";
 import { useLanguage } from "../../context/LanguageContext";
-import cv from "../../assets/Emanuel_Montenegro_CV_Frontend_Actualizado.pdf";
+import cves from "../../assets/cvs/Emanuel_Montenegro_CVes.pdf";
+import cven from "../../assets/cvs/Emanuel_Montenegro_CVen.pdf";
 
 const About = () => {
-  const { t } = useLanguage();
+  
+  const { lang, t } = useLanguage();
+  const cv = lang === "es" ? cves : cven;
 
   return (
     <section className="about">
@@ -33,6 +36,7 @@ const About = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="btn primary about-cv"
+          download
         >
           {t.about.downloadCv}
         </a>
