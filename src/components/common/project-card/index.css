@@ -58,3 +58,18 @@
   font-size: 0.85rem;
   color: var(--color-primary);
 }
+
+@media (max-width: 768px) {
+  .project-image {
+    height: 140px;
+  }
+
+  .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content p {
+    font-size: 0.95rem;
+  }
+  
+}

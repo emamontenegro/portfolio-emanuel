@@ -58,3 +58,17 @@
   border-color: var(--color-primary);
 }
 
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .copy-btn {
+    margin-top: 0;
+    align-self: stretch;
+    text-align: center;
+  }
+}
+

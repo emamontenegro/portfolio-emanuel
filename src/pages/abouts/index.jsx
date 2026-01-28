@@ -7,13 +7,12 @@ import cven from "../../assets/cvs/Emanuel_Montenegro_CVen.pdf";
 
 const About = () => {
   
-  const { lang, t } = useLanguage();
-  const cv = lang === "es" ? cves : cven;
+  const { t } = useLanguage();
 
   return (
     <section className="about">
       <div className="about-container">
-        <h1 className="section-title">{t.about.title}</h1>
+        <h1 className="section-title-about">{t.about.title}</h1>
 
         <p className="about-text">
           {t.about.p1}
@@ -31,15 +30,27 @@ const About = () => {
           <Certifications />
         </div>
 
-        <a
-          href={cv}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn primary about-cv"
-          download
-        >
-          {t.about.downloadCv}
-        </a>
+        <div className="about-cv-container">
+          <a
+            href={cves}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn primary about-cv"
+            download
+          >
+            Download CV (ES)
+          </a>
+
+          <a
+            href={cven}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn secondary about-cv"
+            download
+          >
+            Download CV (EN)
+          </a>
+        </div>
       </div>
     </section>
   );

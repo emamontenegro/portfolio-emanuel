@@ -1,11 +1,11 @@
 .certifications {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
-.section-title {
+.certifications .section-title {
   font-family: var(--font-heading);
   font-size: 1.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: var(--color-text);
 }
 
@@ -74,9 +74,19 @@
   color: #7a7a7a;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+
+  .certifications {
+    margin-top: 0rem;
+    padding: auto 0.5rem;
+  }
+  
   .certifications-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .certifications .section-title {
+    font-size: 1.3rem;
   }
 }

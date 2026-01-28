@@ -17,3 +17,14 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 1rem 0.5rem;
+  }
+
+  .projects-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}

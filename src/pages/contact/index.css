@@ -1,6 +1,6 @@
 .contact {
   min-height: calc(100vh - 120px);
-  padding: 4rem 1.5rem;
+  padding: 3rem 1.5rem;
 }
 
 .contact .section-title {
@@ -35,16 +35,21 @@
   gap: 1.2rem;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .contact {
-    padding: 3rem 1rem;
+    padding: 1rem 0.5rem;
   }
 
   .contact .section-title {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .contact-intro {
     font-size: 0.95rem;
+  }
+
+  .contact-content {
+    gap: 1.5rem;
   }
 }

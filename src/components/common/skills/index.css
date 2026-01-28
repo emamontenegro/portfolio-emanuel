@@ -1,11 +1,18 @@
 .skills {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1.5rem;
+}
+
+.skills .section-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
 }
 
 .skill-card {
@@ -53,5 +60,34 @@
 .skill-card.github:hover img {
   filter: brightness(2) drop-shadow(0 0 1px var(--color-primary));
   transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+  .skills {
+    margin-top: 0rem;
+    padding:  auto 0.5rem;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .skill-card img {
+    width: 36px;
+    margin-bottom: 0.4rem;
+  }
+
+  .skill-card span {
+    font-size: 0.85rem;
+  }
+
+  .skills .section-title {
+    font-size: 1.3rem;
+  }
 }
 

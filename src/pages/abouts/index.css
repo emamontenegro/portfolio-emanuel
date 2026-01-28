@@ -1,5 +1,5 @@
 .about {
-  padding: 4rem 1.5rem;
+  padding: 3rem 1.5rem;
   background-color: var(--color-bg);
   color: var(--color-text);
 }
@@ -9,7 +9,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1rem;
 }
 
 .about-text {
@@ -23,17 +23,42 @@
 .about-block {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.about-cv {
-  align-self: flex-start;
-  margin-top: 3rem;
+.about-cv-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.section-title {
+.about .section-title-about {
   font-family: var(--font-heading);
   font-size: 2rem;
   color: var(--color-text);
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  
+  .about {
+    padding: 1rem 0.5rem;
+  }
+  
+  .about-container {
+    gap: 1rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about .section-title-about {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+  }
+
+  .about-cv {
+    margin-top: 0.5rem;
+  }
 }
