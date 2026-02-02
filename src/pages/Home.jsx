@@ -2,7 +2,7 @@ import Contact from "../components/sections/Contact";
 import Projects from "../components/sections/Projects";
 import Hero from "../components/sections/Hero";
 import { useLanguage } from "../context/LanguageContext";
-import About from "../components/sections/about";
+import About from "../components/sections/About";
 
 
 const Home = () => {
