@@ -1,6 +1,6 @@
-import "./index.css";
-import ContactCard from "../../components/common/contact-card";
+import ContactCard from "../common/contact-card";
 import { useLanguage } from "../../context/LanguageContext";
+import "../../styles/contact.css";
 
 const EMAIL = "montenegroemanuel995@gmail.com";
 const PHONE = "543416084290";
@@ -12,8 +12,14 @@ const Contact = () => {
     t.contact.whatsapp.message
   )}`;
 
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  const emailLink = isMobile
+    ? `mailto:${EMAIL}`
+    : `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}`;
+
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <h1 className="section-title">{t.contact.title}</h1>
 
       <div className="contact-content">
@@ -25,8 +31,7 @@ const Contact = () => {
           <ContactCard
             label="Email"
             value={EMAIL}
-            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}`}
-            copy
+            href={emailLink}
           />
 
           <ContactCard

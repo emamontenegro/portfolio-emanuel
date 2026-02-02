@@ -25,10 +25,10 @@ const ProjectCard = ({ project }) => {
         </ul>
 
         <div className="project-links">
-          <a href={project.demo} target="_blank" rel="noreferrer">
+          <a href={project.demo} target="_blank" rel="noreferrer" className="btn-project-card btn-primary-outline">
             {t.projects.demo}
           </a>
-          <a href={project.code} target="_blank" rel="noreferrer">
+          <a href={project.code} target="_blank" rel="noreferrer" className="btn-project-card btn-secondary-outline">
             {t.projects.code}
           </a>
         </div>

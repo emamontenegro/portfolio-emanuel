@@ -1,0 +1,130 @@
+/* ABOUT SECTION */
+
+.about {
+  padding: 1rem 1.5rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  position: relative;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* TITLE */
+
+.section-title-about {
+  position: relative;
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  color: var(--color-text);
+  padding-bottom: 0.6rem;
+  width: fit-content;
+}
+
+.section-title-about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 40%;
+  height: 4px;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    rgba(180, 58, 237, 0.3)
+  );
+}
+
+/* TEXT BLOCK */
+
+.about-text {
+  font-family: var(--font-body);
+  line-height: 1.8;
+  color: #cfcfcf;
+  font-size: 1.05rem;
+  max-width: 850px;
+}
+
+/* CONTENT BLOCKS (Skills / Certs) */
+
+.about-block {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(180, 58, 237, 0.25);
+  border-radius: 16px;
+
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  box-shadow:
+    0 0 0 1px rgba(180, 58, 237, 0.15),
+    0 20px 40px rgba(0, 0, 0, 0.4);
+
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-block:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 0 1px rgba(180, 58, 237, 0.35),
+    0 25px 55px rgba(180, 58, 237, 0.25);
+}
+
+/* CV BUTTONS */
+
+.about-cv-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.about-cv {
+  min-width: 180px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .about {
+    padding: 1rem 0.8rem;
+  }
+
+  .about-container {
+    gap: 2rem;
+  }
+
+  .section-title-about {
+    font-size: 1.7rem;
+  }
+
+  .section-title-about::after {
+    width: 50%;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-block {
+    padding: 1.5rem;
+  }
+
+  .about-cv-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

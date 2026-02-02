@@ -1,32 +1,74 @@
-import { NavLink } from "react-router";
+import { Link } from "react-scroll";
 import { useLanguage } from "../../../context/LanguageContext";
 import "./index.css";
+import { useState } from "react";
 
 const Header = () => {
   const { t, lang, toggleLanguage } = useLanguage();
 
+  const [activeNav, setActiveNav] = useState('home');
+
   return (
     <header className="header">
-      <NavLink to="/" className="logo">
+      <Link to="home" 
+            className="logo"
+            smooth={true} 
+            duration={100} 
+            offset={-90} 
+            activeClass="active"
+            onClick={() => setActiveNav('home')}
+            >
         EM
-      </NavLink>
+      </Link>
 
       <nav className="nav">
-        <NavLink to="/" end className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+        <Link to="home" 
+              smooth={true} 
+              duration={300} 
+              offset={-90} 
+              activeClass="active"
+              spy={true}
+              onSetActive={() => setActiveNav('home')}
+              onClick={() => setActiveNav('home')}
+              className={`nav-link ${activeNav === 'home' ? 'active' : ''}`}>
           {t.header.home}
-        </NavLink>
+        </Link>
 
-        <NavLink to="/projects" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-          {t.header.projects}
-        </NavLink>
-
-        <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+        <Link to="about" 
+              smooth={true} 
+              duration={300} 
+              offset={-90} 
+              activeClass="active"
+              spy={true}
+              onSetActive={() => setActiveNav('about')}
+              onClick={() => setActiveNav('about')}
+              className={`nav-link ${activeNav === 'about' ? 'active' : ''}`}>
           {t.header.about}
-        </NavLink>
+        </Link>
 
-        <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+        <Link to="projects" 
+              smooth={true} 
+              duration={300} 
+              offset={-90} 
+              activeClass="active"
+              spy={true}
+              onSetActive={() => setActiveNav('projects')}
+              onClick={() => setActiveNav('projects')}
+              className={`nav-link ${activeNav === 'projects' ? 'active' : ''}`}>
+          {t.header.projects}
+        </Link>
+
+        <Link to="contact" 
+              smooth={true} 
+              duration={300} 
+              offset={-90} 
+              activeClass="active"
+              spy={true}
+              onSetActive={() => setActiveNav('contact')}
+              onClick={() => setActiveNav('contact')}
+              className={`nav-link ${activeNav === 'contact' ? 'active' : ''}`}>
           {t.header.contact}
-        </NavLink>
+        </Link>
       </nav>
 
       <button className="lang-switch" onClick={toggleLanguage}>

@@ -1,13 +1,13 @@
 import { useLanguage } from "../../context/LanguageContext";
 import projects from "../../data/projects.json";
-import ProjectCard from "../../components/common/project-card";
-import "./index.css";
+import ProjectCard from "../common/project-card";
+import "../../styles/projects.css";
 
 const Projects = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h1 className="projects-title">{t.projects.title}</h1>
 
       <div className="projects-grid">

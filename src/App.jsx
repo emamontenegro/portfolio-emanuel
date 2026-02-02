@@ -1,20 +1,16 @@
-import { Routes, Route } from "react-router";
+import Header from "./components/layout/header";
 import Home from "./pages/home";
-import About from "./pages/abouts";
-import Contact from "./pages/contact";
-import MainLayout from "./components/layout/mainLayout";
-import Projects from "./pages/projects";
+import Footer from "./components/layout/footer";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<Home />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-      </Route>
-    </Routes>
+    <div className="app-container">
+      <Header />
+      <main>
+        <Home />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
