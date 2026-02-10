@@ -4,73 +4,59 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import cves from "../../assets/cvs/CV_Emanuel_Montenegro_ES.pdf";
 import cven from "../../assets/cvs/CV_Emanuel_Montenegro_EN.pdf";
-import "../../styles/home.css";
+import { heroContainer, heroItem, heroAvatar } from "../../utils/motions/hero.motions";
+import "../../styles/hero.css";
 
 const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <motion.div
-      className="hero"
+    <motion.section
       id="home"
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
+      className="hero"
+      variants={heroContainer}
+      initial="hidden"
+      animate="visible"
     >
-      <div className="hero-left">
-        <motion.img
-          src={avatarBlack}
-          alt="Emanuel Montenegro"
-          className="hero-avatar"
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.2 }}
-        />
-        <motion.div
-          className="hero-text"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-        >
-          <h1 className="hero-name">Emanuel Montenegro</h1>
-          <span className="hero-role">Junior Frontend Developer</span>
-        </motion.div>
-      </div>
+      <motion.img
+        src={avatarBlack}
+        alt="Emanuel Montenegro"
+        className="hero-avatar"
+        variants={heroAvatar}
+      />
 
-      <motion.div
-        className="hero-right"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6 }}
-      >
+      <motion.div className="hero-text" variants={heroItem}>
+        <h1 className="hero-name">Emanuel Montenegro</h1>
+        <span className="hero-role">Junior Frontend Developer</span>
         <p className="hero-description">{t.home.description}</p>
-        <div className="hero-buttons">
-          <a
-            href={cves}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn primary hero-cv"
-            download
-          >
-            Download CV (ES)
-          </a>
+      </motion.div>
 
-          <a
-            href={cven}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn secondary hero-cv"
-            download
-          >
-            Download CV (EN)
-          </a>
-        </div>
+      <motion.div className="hero-buttons" variants={heroItem}>
+        <a
+          href={cves}
+          className="btn primary hero-cv"
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+        >
+          Download CV (ES)
+        </a>
+
+        <a
+          href={cven}
+          className="btn secondary hero-cv"
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+        >
+          Download CV (EN)
+        </a>
       </motion.div>
 
       <Link to="about" smooth duration={500} className="scroll-indicator">
-        <div className="arrow"></div>
+        <div className="arrow" />
       </Link>
-    </motion.div>
+    </motion.section>
   );
 };
 

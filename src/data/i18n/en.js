@@ -48,6 +48,13 @@ const en = {
   skills: {
     title: "Technologies",
   },
+
+    footer: {
+    name: "Emanuel Montenegro",
+    role: "Junior Frontend Developer",
+    stack: "React · JavaScript (ES6+) · HTML · CSS · Git",
+    built: "Built with React & Vite",
+  }
 };
 
 export default en;

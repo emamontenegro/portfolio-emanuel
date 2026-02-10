@@ -1,7 +1,15 @@
 import { Link } from "react-scroll";
 import { useLanguage } from "../../../context/LanguageContext";
 import "./index.css";
-import { useState } from "react";
+import { act, useState } from "react";
+
+const scrollProps = {
+  smooth: true,
+  duration: 300,
+  offset: -90,
+  spy: true,
+  activeClass: "active",
+};
 
 const Header = () => {
   const { t, lang, toggleLanguage } = useLanguage();
@@ -12,10 +20,7 @@ const Header = () => {
     <header className="header">
       <Link to="home" 
             className="logo"
-            smooth={true} 
-            duration={100} 
-            offset={-90} 
-            activeClass="active"
+            {...scrollProps}
             onClick={() => setActiveNav('home')}
             >
         EM
@@ -23,11 +28,7 @@ const Header = () => {
 
       <nav className="nav">
         <Link to="home" 
-              smooth={true} 
-              duration={300} 
-              offset={-90} 
-              activeClass="active"
-              spy={true}
+              {...scrollProps}
               onSetActive={() => setActiveNav('home')}
               onClick={() => setActiveNav('home')}
               className={`nav-link ${activeNav === 'home' ? 'active' : ''}`}>
@@ -35,11 +36,7 @@ const Header = () => {
         </Link>
 
         <Link to="about" 
-              smooth={true} 
-              duration={300} 
-              offset={-90} 
-              activeClass="active"
-              spy={true}
+              {...scrollProps}
               onSetActive={() => setActiveNav('about')}
               onClick={() => setActiveNav('about')}
               className={`nav-link ${activeNav === 'about' ? 'active' : ''}`}>
@@ -47,11 +44,7 @@ const Header = () => {
         </Link>
 
         <Link to="projects" 
-              smooth={true} 
-              duration={300} 
-              offset={-90} 
-              activeClass="active"
-              spy={true}
+              {...scrollProps}
               onSetActive={() => setActiveNav('projects')}
               onClick={() => setActiveNav('projects')}
               className={`nav-link ${activeNav === 'projects' ? 'active' : ''}`}>
@@ -59,11 +52,7 @@ const Header = () => {
         </Link>
 
         <Link to="contact" 
-              smooth={true} 
-              duration={300} 
-              offset={-90} 
-              activeClass="active"
-              spy={true}
+              {...scrollProps}
               onSetActive={() => setActiveNav('contact')}
               onClick={() => setActiveNav('contact')}
               className={`nav-link ${activeNav === 'contact' ? 'active' : ''}`}>
