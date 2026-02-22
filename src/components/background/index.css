@@ -1,4 +1,4 @@
-/* Fondo base profundo */
+/* Fondo base */
 .background-layer {
   position: fixed;
   inset: 0;
@@ -12,7 +12,7 @@
   );
 }
 
-/* HEX GRID ULTRA SUTIL */
+/* HEX GRID */
 .hex-pattern {
   position: absolute;
   inset: -50%;
@@ -22,7 +22,7 @@
   transform: perspective(1000px) rotateX(60deg) scale(1.8);
 }
 
-/* Movimiento ultra suave */
+/* Movimiento */
 @keyframes moveHex {
   from {
     transform: perspective(1000px) rotateX(60deg) translateY(0) scale(1.8);
@@ -32,7 +32,7 @@
   }
 }
 
-/* Overlay de luz elegante (sin azul dominante) */
+/* Overlay de luz */
 .color-overlay {
   position: absolute;
   inset: 0;
@@ -42,7 +42,7 @@
   animation: subtleShift 25s ease-in-out infinite alternate;
 }
 
-/* Animación MUY sutil */
+/* Animación */
 @keyframes subtleShift {
   0% {
     background:
