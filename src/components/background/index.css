@@ -1,0 +1,65 @@
+/* Fondo base profundo */
+.background-layer {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    #040406 0%,
+    #070710 50%,
+    #050507 100%
+  );
+}
+
+/* HEX GRID ULTRA SUTIL */
+.hex-pattern {
+  position: absolute;
+  inset: -50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='52' viewBox='0 0 60 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-opacity='0.04' stroke-width='1'%3E%3Cpolygon points='30 1 59 16 59 36 30 51 1 36 1 16'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 52px;
+  animation: moveHex 100s linear infinite;
+  transform: perspective(1000px) rotateX(60deg) scale(1.8);
+}
+
+/* Movimiento ultra suave */
+@keyframes moveHex {
+  from {
+    transform: perspective(1000px) rotateX(60deg) translateY(0) scale(1.8);
+  }
+  to {
+    transform: perspective(1000px) rotateX(60deg) translateY(-200px) scale(1.8);
+  }
+}
+
+/* Overlay de luz elegante (sin azul dominante) */
+.color-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(140, 0, 255, 0.12), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(0, 200, 255, 0.06), transparent 50%);
+  animation: subtleShift 25s ease-in-out infinite alternate;
+}
+
+/* Animación MUY sutil */
+@keyframes subtleShift {
+  0% {
+    background:
+      radial-gradient(circle at 20% 20%, rgba(140, 0, 255, 0.12), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(0, 200, 255, 0.06), transparent 50%);
+  }
+  100% {
+    background:
+      radial-gradient(circle at 60% 30%, rgba(140, 0, 255, 0.15), transparent 45%),
+      radial-gradient(circle at 30% 80%, rgba(0, 200, 255, 0.05), transparent 50%);
+  }
+}
+
+/* Glow del mouse */
+.mouse-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transition: background 0.15s ease-out;
+}

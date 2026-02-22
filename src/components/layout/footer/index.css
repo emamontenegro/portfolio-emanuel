@@ -1,7 +1,9 @@
 .footer {
   border-top: 1px solid #1f1f26;
-  background: #0e0e11;
+  background: rgba(14, 14, 17, 0.3);
+  backdrop-filter: blur(2px);
   margin-top: 6rem;
+
 }
 
 .footer-content {

@@ -2,7 +2,6 @@
 
 .about {
   padding: 1rem 1.5rem;
-  background-color: var(--color-bg);
   color: var(--color-text);
   position: relative;
 }
