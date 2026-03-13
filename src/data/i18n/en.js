@@ -59,8 +59,8 @@ const en = {
 
     footer: {
     name: "Emanuel Montenegro",
-    role: "Junior Frontend Developer",
-    stack: "React · JavaScript (ES6+) · HTML · CSS · Git",
+    role: "Frontend Developer",
+    stack: "React · JavaScript (ES6+) · HTML · CSS · Git · Node.js · Express · MongoDB",
     built: "Built with React & Vite",
   },
 
