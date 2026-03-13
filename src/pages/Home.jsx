@@ -3,6 +3,7 @@ import Projects from "../components/sections/Projects";
 import Hero from "../components/sections/Hero";
 import { useLanguage } from "../context/LanguageContext";
 import About from "../components/sections/About";
+import Experience from "../components/sections/Experience";
 
 
 const Home = () => {
@@ -10,21 +11,15 @@ const Home = () => {
 
   return (
     <>
-      <section id="home">
-        <Hero />
-      </section>
+      <section id="home"><Hero /></section>
 
-      <section id="about">
-        <About />
-      </section>
+      <section id="about"><About /></section>
 
-      <section id="projects">
-        <Projects />
-      </section>
+      <section id="projects"><Projects /></section>
 
-      <section id="contact">
-        <Contact />
-      </section>
+      <section id="experience"><Experience /></section>
+
+      <section id="contact"><Contact /></section>
     </>
   );
 };

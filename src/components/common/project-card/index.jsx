@@ -19,16 +19,22 @@ const ProjectCard = ({ project }) => {
         <p>{project.description[lang]}</p>
 
         <ul className="project-stack">
-          {project.stack.map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
+          {project.stack.map((tech, index) => (<li key={index}>{tech}</li>))}
         </ul>
 
         <div className="project-links">
-          <a href={project.demo} target="_blank" rel="noreferrer" className="btn-project-card btn-primary-outline">
+          
+          <a href={project.demo} 
+            target="_blank" 
+            rel="noreferrer" 
+            className="btn-project-card btn-primary-outline">
             {t.projects.demo}
           </a>
-          <a href={project.code} target="_blank" rel="noreferrer" className="btn-project-card btn-secondary-outline">
+          
+          <a href={project.code} 
+            target="_blank" 
+            rel="noreferrer" 
+            className="btn-project-card btn-secondary-outline">
             {t.projects.code}
           </a>
         </div>

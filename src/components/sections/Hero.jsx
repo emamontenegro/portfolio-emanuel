@@ -27,7 +27,7 @@ const Hero = () => {
 
       <motion.div className="hero-text" variants={heroItem}>
         <h1 className="hero-name">Emanuel Montenegro</h1>
-        <span className="hero-role">Junior Frontend Developer</span>
+        <span className="hero-role">{t.home.role}</span>
         <p className="hero-description">{t.home.description}</p>
       </motion.div>
 

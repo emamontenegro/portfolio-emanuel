@@ -8,9 +8,7 @@ const PHONE = "543416084290";
 const Contact = () => {
   const { t } = useLanguage();
 
-  const whatsappLink = `https://wa.me/${PHONE}?text=${encodeURIComponent(
-    t.contact.whatsapp.message
-  )}`;
+  const whatsappLink = `https://wa.me/${PHONE}?text=${encodeURIComponent(t.contact.whatsapp.message)}`;
 
   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
@@ -23,9 +21,7 @@ const Contact = () => {
       <h1 className="section-title">{t.contact.title}</h1>
 
       <div className="contact-content">
-        <p className="contact-intro">
-          {t.contact.intro}
-        </p>
+        <p className="contact-intro">{t.contact.intro}</p>
 
         <div className="contact-cards">
           <ContactCard
@@ -37,7 +33,7 @@ const Contact = () => {
           <ContactCard
             label="LinkedIn"
             value="/emanuel-montenegro"
-            href="https://www.linkedin.com/in/emanuel-montenegro-12a5943a5/"
+            href="https://www.linkedin.com/in/emanuel-montenegro-dev/"
           />
 
           <ContactCard

@@ -11,9 +11,7 @@ const Projects = () => {
       <h1 className="projects-title">{t.projects.title}</h1>
 
       <div className="projects-grid">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+        {projects.map((project) => (<ProjectCard key={project.id} project={project} />))}
       </div>
     </section>
   );

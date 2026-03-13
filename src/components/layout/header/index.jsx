@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { useLanguage } from "../../../context/LanguageContext";
 import "./index.css";
-import { act, useState } from "react";
+import { useState } from "react";
 
 const scrollProps = {
   smooth: true,
@@ -51,6 +51,14 @@ const Header = () => {
           {t.header.projects}
         </Link>
 
+        <Link to="experience" 
+              {...scrollProps}
+              onSetActive={() => setActiveNav('experience')}
+              onClick={() => setActiveNav('experience')}
+              className={`nav-link ${activeNav === 'experience' ? 'active' : ''}`}>
+          {t.header.experience}
+        </Link>
+
         <Link to="contact" 
               {...scrollProps}
               onSetActive={() => setActiveNav('contact')}
@@ -60,9 +68,7 @@ const Header = () => {
         </Link>
       </nav>
 
-      <button className="lang-switch" onClick={toggleLanguage}>
-        {lang.toUpperCase()}
-      </button>
+      <button className="lang-switch" onClick={toggleLanguage}>{lang.toUpperCase()}</button>
     </header>
   );
 };

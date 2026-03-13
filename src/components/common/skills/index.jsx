@@ -9,15 +9,30 @@ const Skills = () => {
     <section className="skills">
       <h2 className="section-title">{t.skills.title}</h2>
 
-      <div className="skills-grid">
-        {skills.map((skill) => (
-          <div key={skill.name}
-          className={`skill-card ${skill.name === "GitHub" ? "github" : ""}`}>
-            <img src={skill.logo} alt={skill.name} />
-            <span>{skill.name}</span>
+      {skills.map((group) => (
+        <div key={group.category} className="skills-category">
+
+          <h3 className="skills-category-title">{t.skills[group.category]}</h3>
+
+          <div className="skills-grid">
+            {group.items.map((skill) => (
+              <div
+                key={skill.name}
+                className={`skill-card 
+                ${!skill.logo ? "text-skill" : ""} 
+                ${skill.name === "GitHub" ? "github" : ""}`}
+              >
+
+                {skill.logo && (<img src={skill.logo} alt={skill.name} />)}
+
+                <span>{skill.name}</span>
+
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+
+        </div>
+      ))}
     </section>
   );
 };

@@ -9,25 +9,19 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-container">
-        <h1 className="section-title-about">
-          {t.about.title}
-        </h1>
+        <h1 className="section-title-about">{t.about.title}</h1>
 
-        <p className="about-text">
-          {t.about.p1}
-        </p>
+        <p className="about-text">{t.about.p1}</p>
 
-        <p className="about-text">
-          {t.about.p2}
-        </p>
+        <p className="about-text">{t.about.p2}</p>
 
-        <div className="about-block">
-          <Skills />
-        </div>
+        <p className="about-text">{t.about.p3}</p>
 
-        <div className="about-block">
-          <Certifications />
-        </div>
+        <p className="about-text">{t.about.p4}</p>
+
+        <div className="about-block"><Skills /></div>
+
+        <div className="about-block"><Certifications /></div>
       </div>
     </section>
   );

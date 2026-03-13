@@ -4,12 +4,14 @@ const en = {
     home: "Home",
     projects: "Projects",
     about: "About",
+    experience: "Experience",
     contact: "Contact",
   },
   
   home: {
     description:
-      "Frontend Developer with full stack web development training at CoderHouse. Specialized in building modern, responsive interfaces focused on user experience.",
+      "I build modern, responsive and user-focused web interfaces, developing scalable applications using component-based architecture and API integrations.",
+      role: "Frontend Developer specialized in React and JavaScript.",
     buttons: {
       projects: "View projects",
       contact: "Contact",
@@ -36,9 +38,10 @@ const en = {
 
   about: {
     title: "About me",
-    p1: "I am a Frontend Developer with full stack web development training at CoderHouse. I have completed the frontend stage and I am currently studying backend development.",
-    p2: "I specialize in building modern, responsive interfaces focused on user experience, using technologies such as React, JavaScript, and CSS.",
-    downloadCv: "Download CV",
+    p1: "I am a Frontend Developer with Full Stack Web Development training, currently expanding my backend skills with Node.js, Express and MongoDB.",
+    p2: "I specialize in building modern, responsive and user-centered web interfaces using technologies such as React, JavaScript (ES6+), HTML5 and CSS3.",
+    p3: "I work with component-based architecture, REST API integration and modern development best practices, focusing on writing clean, maintainable and scalable code.",
+    p4: "I continuously improve my skills through real-world projects and new technologies, with the goal of growing as a Full Stack JavaScript Developer."
   },
 
   certifications: {
@@ -46,7 +49,12 @@ const en = {
   },
 
   skills: {
-    title: "Technologies",
+    title: "Skills",
+    frontend: "Frontend",
+    backend: "Backend",
+    tools: "Tools & Technologies",
+    practices: "Development Practices",
+    methodologies: "Methodologies"
   },
 
     footer: {
@@ -54,7 +62,28 @@ const en = {
     role: "Junior Frontend Developer",
     stack: "React · JavaScript (ES6+) · HTML · CSS · Git",
     built: "Built with React & Vite",
-  }
+  },
+
+  experience: {
+    title: "Experience",
+    agronomy: {
+      role: "Agronomy Technician",
+      company: "Norberto Bressan SRL",
+      period: "Nov 2022 – Sep 2025",
+      location: "Argentina · On-site",
+      description:
+      "Managed productive processes in swine production, including feed planning, weight tracking and logistics coordination.",
+    tasks: [
+      "Management of animal feeding plans according to growth stages",
+      "Monitoring of weight tracking and production performance",
+      "Logistics coordination for animal loading and supply unloading",
+      "Organization of fattening and swine production processes",
+      "Operational problem solving in field operations"
+    ],
+    skills:
+      "This experience helped me develop analytical thinking, decision-making and process optimization skills."
+    }
+  },
 };
 
 export default en;
