@@ -35,10 +35,7 @@ const Certifications = () => {
         ))}
       </div>
 
-      <Modal
-        isOpen={!!selectedCert}
-        onClose={() => setSelectedCert(null)}
-      >
+      <Modal isOpen={!!selectedCert} onClose={() => setSelectedCert(null)} >
         {selectedCert && (
           <img
             src={certificationImages[selectedCert.image]}

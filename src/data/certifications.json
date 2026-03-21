@@ -28,5 +28,15 @@
     "institution": "Coderhouse",
     "year": "2025",
     "image": "react-js.png"
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "Development with AI",
+      "es": "Desarrollo con IA"
+    },
+    "institution": "BIG School",
+    "year": "2026",
+    "image": "desarrollo-con-ia.png"
   }
 ]
