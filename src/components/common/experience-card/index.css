@@ -1,0 +1,111 @@
+/* EXPERIENCE CARD */
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  padding: 1.2rem;
+  margin: 0.8rem 0;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  transition: all 0.25s ease;
+}
+
+.experience-card:hover {
+  border: 1px solid rgba(180, 58, 237, 0.3);
+  transform: translateY(-3px);
+}
+
+/* HEADER */
+
+.experience-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.experience-role {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-text);
+}
+
+.experience-company {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-primary);
+}
+
+.experience-location {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* DESCRIPTION */
+
+.experience-description {
+  font-family: var(--font-body);
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #cfcfcf;
+}
+
+/* TASKS */
+
+.experience-tasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience-tasks li {
+  position: relative;
+  padding-left: 1.3rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+
+.experience-tasks li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+/* SKILLS */
+
+.experience-skills {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .experience-role {
+    font-size: 1.15rem;
+  }
+
+  .experience-description {
+    font-size: 0.95rem;
+  }
+
+  .experience-tasks li {
+    font-size: 0.9rem;
+  }
+
+}

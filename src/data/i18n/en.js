@@ -66,24 +66,47 @@ const en = {
 
   experience: {
     title: "Experience",
-    agronomy: {
-      role: "Agronomy Technician",
-      company: "Norberto Bressan SRL",
-      period: "Nov 2022 – Sep 2025",
-      location: "Argentina · On-site",
-      description:
-      "Managed productive processes in swine production, including feed planning, weight tracking and logistics coordination.",
-    tasks: [
-      "Management of animal feeding plans according to growth stages",
-      "Monitoring of weight tracking and production performance",
-      "Logistics coordination for animal loading and supply unloading",
-      "Organization of fattening and swine production processes",
-      "Operational problem solving in field operations"
-    ],
-    skills:
-      "This experience helped me develop analytical thinking, decision-making and process optimization skills."
-    }
-  },
+    jobs: [
+      {
+        role: "Frontend Developer",
+        company: "Freelancer.com",
+        period: "Present",
+        location: "Remote",
+        description:
+          "Frontend developer experienced in building modern, scalable, and user-focused web applications.",
+        tasks: [
+          "Building interfaces with React and modern JavaScript (ES6+)",
+          "Responsive (mobile-first) development",
+          "REST API integration",
+          "Client-side routing with React Router",
+          "UX improvements (scroll, navigation)",
+          "Semantic HTML and modular CSS",
+          "Responsive layouts",
+          "Clean code practices",
+          "Git & GitHub",
+          "Deployments on Vercel",
+          "Performance optimization",
+          "Continuous learning"
+        ],
+        skills:
+          "Focused on clean code, scalability, and user experience."
+      },
+      {
+        role: "Agronomy Technician",
+        company: "Norberto Bressan SRL",
+        period: "Nov 2022 – Sep 2025",
+        location: "Argentina · On-site",
+        description:
+          "Management of production processes in pig farming.",
+        tasks: [
+          "Contributed to the management and optimization of animal feeding programs across different growth stages, helping increase weekly feed consumption from 37 to 60 tons (+62%) and improving overall production efficiency.",
+          "Supported the organization and optimization of swine fattening and production processes, contributing to a 66.7% increase in the number of sows weaned per week, while maintaining an average of 11 piglets per sow, significantly boosting total production output."
+        ],
+        skills:
+          "Developed analytical thinking and decision-making."
+      }
+    ]
+  }
 };
 
 export default en;

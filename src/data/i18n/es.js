@@ -66,23 +66,46 @@ const es = {
 
   experience: {
     title: "Experiencia",
-    agronomy: {
-      role: "Técnico Agrónomo",
-      company: "Norberto Bressan SRL",
-      period: "Nov 2022 – Sep 2025",
-      location: "Argentina · Presencial",
-      description:
-      "Gestión de procesos productivos en producción porcina, incluyendo planificación de alimentación, seguimiento de pesajes y coordinación logística.",
-    tasks: [
-      "Gestión de planes de alimentación animal según etapas de crecimiento",
-      "Seguimiento de pesajes y evolución productiva",
-      "Coordinación logística en carga de animales y descarga de insumos",
-      "Organización de procesos de engorde y producción porcina",
-      "Resolución de problemas operativos en campo"
-    ],
-    skills:
-      "Esta experiencia me permitió desarrollar habilidades de análisis, toma de decisiones y optimización de procesos."
-    }
+    jobs: [
+      {
+        role: "Desarrollador Frontend",
+        company: "Freelancer.com",
+        period: "Actualidad",
+        location: "Remoto",
+        description:
+          "Desarrollador Frontend con experiencia en la construcción de aplicaciones web modernas, escalables y centradas en la experiencia del usuario.",
+        tasks: [
+          "Desarrollo de interfaces con React y JavaScript (ES6+)",
+          "Creación de sitios responsivos (mobile-first)",
+          "Consumo e integración de APIs REST",
+          "Implementación de React Router",
+          "Mejoras en UX (scroll, navegación, etc.)",
+          "Maquetación con HTML semántico y CSS modular",
+          "Diseño de layouts adaptables",
+          "Buenas prácticas de clean code",
+          "Uso de Git y GitHub",
+          "Deploy en Vercel",
+          "Optimización de performance",
+          "Aprendizaje continuo"
+        ],
+        skills:
+          "Foco en código limpio, escalabilidad y experiencia de usuario."
+      },
+      {
+        role: "Técnico Agrónomo",
+        company: "Norberto Bressan SRL",
+        period: "Nov 2022 – Sep 2025",
+        location: "Argentina · Presencial",
+        description:
+          "Gestión de procesos productivos en producción porcina.",
+        tasks: [
+          "Colaboré en la gestión y optimización de los planes de alimentación animal según las etapas de crecimiento, contribuyendo a incrementar el consumo semanal de alimento de 37 a 60 toneladas (+62%), mejorando la eficiencia productiva.",
+          "Participé en la organización y optimización de los procesos de engorde y producción porcina, contribuyendo a un incremento del 66,7% en la cantidad de madres destetadas por semana, manteniendo un promedio de 11 lechones por madre, lo que permitió aumentar significativamente la producción total."
+        ],
+        skills:
+          "Desarrollo de análisis, toma de decisiones y optimización."
+      }
+    ]
   },
 };
 
