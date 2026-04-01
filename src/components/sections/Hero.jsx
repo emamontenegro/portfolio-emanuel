@@ -2,8 +2,8 @@ import avatarBlack from "../../assets/avatar-black-cuadrado.png";
 import { useLanguage } from "../../context/LanguageContext";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import cves from "../../assets/cvs/cv-español.pdf";
-import cven from "../../assets/cvs/cv-english.pdf";
+import cves from "../../assets/cvs/cv-español-portfolio.pdf";
+import cven from "../../assets/cvs/cv-english-portfolio.pdf";
 import { heroContainer, heroItem, heroAvatar } from "../../utils/motions/hero.motions";
 import "../../styles/hero.css";
 
