@@ -11,7 +11,7 @@ const es = {
   home: {
     description:
       "Desarrollo interfaces web modernas, responsivas y centradas en la experiencia de usuario, construyendo aplicaciones escalables basadas en arquitectura de componentes e integración con APIs.",
-      role: "Frontend Developer especializado en React y JavaScript.",
+      role: "Frontend Developer Junior especializado en React y JavaScript.",
     buttons: {
       projects: "Ver proyectos",
       contact: "Contacto",

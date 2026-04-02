@@ -11,7 +11,7 @@ const en = {
   home: {
     description:
       "I build modern, responsive and user-focused web interfaces, developing scalable applications using component-based architecture and API integrations.",
-      role: "Frontend Developer specialized in React and JavaScript.",
+      role: "Junior Frontend Developer specialized in React and JavaScript.",
     buttons: {
       projects: "View projects",
       contact: "Contact",
