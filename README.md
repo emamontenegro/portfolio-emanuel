@@ -141,5 +141,7 @@ The application does not implement specific error handling mechanisms, as it is 
 - Implement a dark/light theme toggle.
 
 ## Author
-Emanuel Montenegro - Frontend Developer  
-[LinkedIn](https://linkedin.com/in/emanuelmontenegro) | [GitHub](https://github.com/emamontenegro) | emanuelmontenegro.dev@gmail.com
+- Author: [Emanuel Montenegro](https://emanuelmontenegro.dev)
+- Portfolio: [emanuelmontenegro.dev](https://emanuelmontenegro.dev)
+- LinkedIn: [linkedin.com/in/emanuelmontenegro](https://www.linkedin.com/in/emanuelmontenegro)
+- GitHub: [github.com/emanuelmontenegro](https://github.com/emanuelmontenegro)
