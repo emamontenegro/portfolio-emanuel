@@ -32,7 +32,7 @@ const Contact = () => {
 
           <ContactCard
             label="LinkedIn"
-            value="/emanuel-montenegro"
+            value="/emanuel-montenegro-dev"
             href="https://www.linkedin.com/in/emanuel-montenegro-dev/"
           />
 
