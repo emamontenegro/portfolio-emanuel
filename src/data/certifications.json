@@ -38,5 +38,15 @@
     "institution": "BIG School",
     "year": "2026",
     "image": "desarrollo-con-ia.png"
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "Backend Development",
+      "es": "Desarrollo Backend"
+    },
+    "institution": "BIG School",
+    "year": "2026",
+    "image": "backend-1.png"
   }
 ]

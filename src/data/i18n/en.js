@@ -59,7 +59,7 @@ const en = {
 
     footer: {
     name: "Emanuel Montenegro",
-    role: "Frontend Developer",
+    role: "Junior Frontend Developer",
     stack: "React · JavaScript (ES6+) · HTML · CSS · Git · Node.js · Express · MongoDB",
     built: "Built with React & Vite",
   },
@@ -69,11 +69,11 @@ const en = {
     jobs: [
       {
         role: "Frontend Developer",
-        company: "Freelancer.com",
+        company: "Freelance",
         period: "Present",
         location: "Remote",
         description:
-          "Frontend developer experienced in building modern, scalable, and user-focused web applications.",
+          "Development of modern web applications using React and JavaScript, participating in the design, implementation, and deployment of complete solutions.",
         tasks: [
           "Building interfaces with React and modern JavaScript (ES6+)",
           "Responsive (mobile-first) development",
@@ -99,8 +99,9 @@ const en = {
         description:
           "Management of production processes in pig farming.",
         tasks: [
-          "Contributed to the management and optimization of animal feeding programs across different growth stages, helping increase weekly feed consumption from 37 to 60 tons (+62%) and improving overall production efficiency.",
-          "Supported the organization and optimization of swine fattening and production processes, contributing to a 66.7% increase in the number of sows weaned per week, while maintaining an average of 11 piglets per sow, significantly boosting total production output."
+          "Increase in weekly feed consumption from 37 to 60 tons +62%.",
+          "Improvement in production efficiency and process organization.",
+          "Increase of 66.7% in weaned mothers per week."
         ],
         skills:
           "Developed analytical thinking and decision-making."

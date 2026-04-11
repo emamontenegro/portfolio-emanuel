@@ -59,7 +59,7 @@ const es = {
 
   footer: {
     name: "Emanuel Montenegro",
-    role: "Desarrollador Frontend",
+    role: "Desarrollador Frontend Junior",
     stack: "React · JavaScript (ES6+) · HTML · CSS · Git · Node.js · Express · MongoDB",
     built: "Desarrollado con React y Vite",
   },
@@ -69,11 +69,11 @@ const es = {
     jobs: [
       {
         role: "Desarrollador Frontend",
-        company: "Freelancer.com",
+        company: "Freelance",
         period: "Actualidad",
         location: "Remoto",
         description:
-          "Desarrollador Frontend con experiencia en la construcción de aplicaciones web modernas, escalables y centradas en la experiencia del usuario.",
+          "Desarrollo de aplicaciones web modernas utilizando React y JavaScript, participando en el diseño, implementación y despliegue de soluciones completas.",
         tasks: [
           "Desarrollo de interfaces con React y JavaScript (ES6+)",
           "Creación de sitios responsivos (mobile-first)",
@@ -99,8 +99,9 @@ const es = {
         description:
           "Gestión de procesos productivos en producción porcina.",
         tasks: [
-          "Colaboré en la gestión y optimización de los planes de alimentación animal según las etapas de crecimiento, contribuyendo a incrementar el consumo semanal de alimento de 37 a 60 toneladas (+62%), mejorando la eficiencia productiva.",
-          "Participé en la organización y optimización de los procesos de engorde y producción porcina, contribuyendo a un incremento del 66,7% en la cantidad de madres destetadas por semana, manteniendo un promedio de 11 lechones por madre, lo que permitió aumentar significativamente la producción total."
+          "Incremento del consumo semanal de alimento de 37 a 60 toneladas (+62%)",
+          "Mejora en la eficiencia productiva y organización de proceso ",
+          "Aumento del 66,7% en madres destetadas por semana"
         ],
         skills:
           "Desarrollo de análisis, toma de decisiones y optimización."

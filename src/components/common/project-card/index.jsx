@@ -24,12 +24,16 @@ const ProjectCard = ({ project }) => {
 
         <div className="project-links">
           
-          <a href={project.demo} 
-            target="_blank" 
-            rel="noreferrer" 
-            className="btn-project-card btn-primary-outline">
-            {t.projects.demo}
-          </a>
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-project-card btn-primary-outline"
+            >
+              {t.projects.demo}
+            </a>
+          )}
           
           <a href={project.code} 
             target="_blank" 

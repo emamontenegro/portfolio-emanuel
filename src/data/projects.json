@@ -34,5 +34,17 @@
     "image": "desarrollo-web-image.png",
     "demo": "https://recreativo-grow.vercel.app/",
     "code": "https://github.com/emamontenegro/Recreativo-Grow"
+  },
+  {
+    "id": 4,
+    "title": "E-Commerce Backend",
+    "description": {
+      "en": "Full-stack e-commerce application built with Node.js, Express, and MongoDB, featuring REST API, real-time updates with Socket.IO, file uploads, and dynamic views with Handlebars.",
+      "es": "Aplicación e-commerce full-stack desarrollada con Node.js, Express y MongoDB, que incluye API REST, actualizaciones en tiempo real con Socket.IO, subida de archivos y vistas dinámicas con Handlebars."
+    },
+    "stack": ["Node.js", "Express", "MongoDB", "Mongoose", "Socket.IO", "Handlebars", "Multer"],
+    "image": "backend1-image.png",
+    "demo": null,
+    "code": "https://github.com/emamontenegro/backend-1"
   }
 ]
