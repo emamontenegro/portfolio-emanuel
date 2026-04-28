@@ -1,0 +1,30 @@
+.theme-toggle-btn {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-soft);
+  color: var(--color-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 1rem;
+}
+
+.theme-toggle-btn:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  background: rgba(180, 58, 237, 0.1);
+  box-shadow: 0 5px 15px var(--color-border);
+}
+
+/* Animación simple para los iconos */
+.theme-toggle-btn svg {
+  transition: transform 0.5s ease;
+}
+
+.theme-toggle-btn:active svg {
+  transform: scale(0.8) rotate(45deg);
+}

@@ -27,7 +27,7 @@
   object-fit: cover;
   border: 3px solid var(--color-primary);
   box-shadow:
-    0 0 0 3px rgba(180, 58, 237, 0.9),
+    0 0 0 3px var(--color-border),
     0 0 55px rgba(180, 58, 237, 0.35);
   cursor: pointer;
   transition:
@@ -39,7 +39,7 @@
 .hero-avatar:hover {
   transform: scale(1.07) rotate(1deg);
   box-shadow:
-    0 0 0 4px rgba(180, 58, 237, 1),
+    0 0 0 4px var(--color-border),
     0 0 80px rgba(180, 58, 237, 0.6);
   filter: brightness(1.05) saturate(1.1);
 }
@@ -75,9 +75,9 @@
 
   background: linear-gradient(
     90deg,
-    rgba(180, 58, 237, 0.3),
+    var(--color-border),
     var(--color-primary),
-    rgba(180, 58, 237, 0.3)
+    var(--color-border)
   );
 }
 
@@ -85,7 +85,7 @@
 .hero-role {
   padding: 0.4rem 1.1rem;
   border-radius: 999px;
-  background: rgba(180, 58, 237, 0.15);
+  background: var(--color-border);
   font-family: var(--font-body);
   font-size: 1.1rem;
   color: var(--color-primary);
@@ -97,7 +97,7 @@
   font-family: var(--font-body);
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #cfcfcf;
+  color: var(--color-text-dim);
   opacity: 0.95;
 }
 
@@ -126,21 +126,21 @@
 .btn.primary {
   background: var(--color-primary);
   color: #0e0e11;
-  box-shadow: 0 10px 30px rgba(180, 58, 237, 0.35);
+  box-shadow: 0 10px 30px var(--color-border);
 }
 
 .btn.primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(180, 58, 237, 0.55);
+  box-shadow: 0 15px 40px var(--color-border);
 }
 
 .btn.secondary {
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-border);
   color: var(--color-primary);
 }
 
 .btn.secondary:hover {
-  background: rgba(180, 58, 237, 0.12);
+  background: var(--color-border);
   transform: translateY(-3px);
 }
 

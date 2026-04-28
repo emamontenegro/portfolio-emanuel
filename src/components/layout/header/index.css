@@ -2,17 +2,13 @@
   position: sticky;
   top: 0;
   z-index: 100;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 1.2rem 2.5rem;
-
-  background: rgba(14, 14, 17, 0.3);
+  background: var(--color-header-bg);
   backdrop-filter: blur(5px);
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--color-border-soft);
 }
 
 .logo {
@@ -20,27 +16,24 @@
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 2px;
-
   color: var(--color-primary);
-
   cursor: pointer;
 }
 
+/* --- NAVEGACIÓN --- */
 .nav {
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav .nav-link {
   position: relative;
-
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 500;
-
-  color: #bdbdbd;
+  color: var(--color-text-dim);
   transition: color 0.3s ease;
-
   cursor: pointer;
 }
 
@@ -57,11 +50,9 @@
   position: absolute;
   left: 0;
   bottom: -6px;
-
   width: 0;
   height: 2px;
   background-color: var(--color-primary);
-
   transition: width 0.3s ease;
 }
 
@@ -69,39 +60,43 @@
   width: 100%;
 }
 
+/* --- BOTONES (CONTROLES) --- */
 .lang-switch {
-  background: transparent;
-  border: 1px solid var(--color-primary);
-  color: #eaeaea;
-  padding: 0.35rem 0.7rem;
-  border-radius: 8px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-soft);
+  color: var(--color-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .lang-switch:hover {
-  background-color: #1f1f1f;
   border-color: var(--color-primary);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  background: rgba(180, 58, 237, 0.1);
+  box-shadow: 0 5px 15px var(--color-border);
 }
-
-.lang-switch:active {
-  transform: translateY(0);
-}
-
-.lang-switch:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
-}
-
 
 .header-actions {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+/* --- LÓGICA DE VISIBILIDAD --- */
+.desktop-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mobile-actions {
+  display: none; /* Oculto en desktop */
 }
 
 .menu-toggle {
@@ -113,16 +108,21 @@
   cursor: pointer;
 }
 
-/* Mobile Styles */
-
+/* --- MOBILE STYLES (425px) --- */
 @media (max-width: 425px) {
-
   .header {
     padding: 0.8rem 1rem;
   }
 
   .menu-toggle {
     display: block;
+    color: var(--color-primary);
+    z-index: 101;
+  }
+
+  /* Ocultamos los controles de la barra principal */
+  .desktop-actions {
+    display: none;
   }
 
   .nav {
@@ -130,22 +130,16 @@
     top: calc(100% + 1px);
     left: 0;
     right: 0;
-
-    background: rgba(14, 14, 17, 0.8);
+    background: var(--color-bg);
     backdrop-filter: blur(5px);
-
     flex-direction: column;
     align-items: center;
-
-    padding: 1rem 0;
-    gap: 1rem;
-
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-
+    padding: 2rem 0;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--color-border-soft);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
-
     transition: all 0.3s ease;
   }
 
@@ -153,5 +147,22 @@
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+  }
+
+  /* Mostramos los controles dentro del menú */
+  .mobile-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 80%;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border-soft);
+  }
+
+  /* Quitamos margen extra del botón de idioma si lo tuviera */
+  .lang-switch {
+    margin-right: 0;
   }
 }

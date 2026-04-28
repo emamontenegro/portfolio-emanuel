@@ -45,8 +45,8 @@
 .cert-card {
   padding: 2rem;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(180, 58, 237, 0.25);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
   cursor: pointer;
 
   transition:
@@ -100,14 +100,14 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.85rem;
-  color: #bdbdbd;
+  color: var(--color-text-dim);
 }
 
 .cert-year {
   display: block;
   margin-top: 0.3rem;
   font-size: 0.75rem;
-  color: #7a7a7a;
+  color: var(--color-text-muted);
 }
 
 /* RESPONSIVE */

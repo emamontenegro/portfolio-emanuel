@@ -1,10 +1,63 @@
 :root {
-  /* Fonts */
+  /* --- Fonts --- */
   --font-heading: 'Orbitron', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  /* Colors */
+  /* --- PALETA DARK (Default) --- */
   --color-bg: #0e0e11;
+  --color-bg-card: rgba(255, 255, 255, 0.03); /* Fondo translúcido */
   --color-primary: #b43aed;
   --color-text: #eaeaea;
+  --color-text-dim: #cfcfcf; /* Para párrafos */
+  --color-text-muted: #8f8f8f; /* Para fechas/instituciones */
+  --hex-opacity: 0.04;
+  --color-border: rgba(180, 58, 237, 0.25);
+  --color-border-soft: rgba(255, 255, 255, 0.05);
+  --color-header-bg: rgba(14, 14, 17, 0.7);
+
+  /* SKILLS DARK */
+  --color-skill-bg: #141418;
+  --color-skill-border: #222222;
+  --color-skill-shadow: rgba(0, 0, 0, 0.5);
+  --color-skill-text-bg: rgba(180, 58, 237, 0.08); /* Violeta suave para oscuro */
+  --skill-img-filter: grayscale(1) brightness(0.9) invert(0);
+  --skill-img-hover: grayscale(0) brightness(1.15) invert(0);
+
+  /* Gradientes de Fondo (Modo Oscuro) */
+  --bg-gradient-1: #040406;
+  --bg-gradient-2: #070710;
+  --bg-gradient-3: #050507;
+  --hex-filter: none;
+  --hex-opacity: 0.04;
+}
+
+[data-theme='light'] {
+  /* --- PALETA LIGHT --- */
+  --color-bg: #f8fafc;
+  --color-bg-card: rgba(255, 255, 255, 0.6); /* Fondo translúcido oscuro */
+  --color-primary: #8b29b9; /* Un violeta un poco más oscuro para contraste */
+  --color-text: #0f172a;
+  --color-text-dim: #334155;
+  --color-text-muted: #64748b;
+  --hex-opacity: 0.12; /* Un poco más visible en fondo claro */
+  --color-border: rgba(139, 41, 185, 0.2);
+  --color-border-soft: rgba(0, 0, 0, 0.05);
+  --color-header-bg: rgba(255, 255, 255, 0.7);
+
+  /* SKILLS LIGHT */
+  --color-skill-bg: #ffffff;
+  --color-skill-border: #e2e8f0;
+  --color-skill-shadow: rgba(0, 0, 0, 0.1);
+  --color-skill-text-bg: rgba(180, 58, 237, 0.1); /* Violeta suave para claro */
+  --skill-img-filter: grayscale(1) brightness(0.2) invert(0); 
+  --skill-img-hover: grayscale(0) brightness(1) invert(0);
+
+  /* Gradientes de Fondo (Modo Claro) */
+  --bg-gradient-1: #ffffff; 
+  --bg-gradient-2: #f8fafc; 
+  --bg-gradient-3: #f1f5f9; 
+
+  /* Bajamos la intensidad de la trama para que no "pise" las letras */
+  --hex-opacity: 0.15; 
+  --hex-filter: invert(1) brightness(0.8) contrast(0.5);
 }

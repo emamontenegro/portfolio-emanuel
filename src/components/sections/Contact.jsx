@@ -1,3 +1,4 @@
+import { GitHub, LinkedIn, WhatsApp, Mail} from "../../assets/contacticon";
 import ContactCard from "../common/contact-card";
 import { useLanguage } from "../../context/LanguageContext";
 import "../../styles/contact.css";
@@ -11,7 +12,6 @@ const Contact = () => {
   const whatsappLink = `https://wa.me/${PHONE}?text=${encodeURIComponent(t.contact.whatsapp.message)}`;
 
   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
   const emailLink = isMobile
     ? `mailto:${EMAIL}`
     : `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}`;
@@ -25,24 +25,28 @@ const Contact = () => {
 
         <div className="contact-cards">
           <ContactCard
+            icon={Mail}
             label="Email"
             value={EMAIL}
             href={emailLink}
           />
 
           <ContactCard
+            icon={LinkedIn}
             label="LinkedIn"
             value="/emanuel-montenegro-dev"
             href="https://www.linkedin.com/in/emanuel-montenegro-dev/"
           />
 
           <ContactCard
+            icon={GitHub}
             label="GitHub"
             value="/emamontenegro"
             href="https://github.com/emamontenegro"
           />
 
           <ContactCard
+            icon={WhatsApp}
             label={t.contact.whatsapp.label}
             value={t.contact.whatsapp.value}
             href={whatsappLink}

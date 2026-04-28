@@ -1,7 +1,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
+  background: var(--color-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,7 @@
   height: 36px;
   border-radius: 50%;
   border: none;
-  background: #1f1f24;
+  background: var(--color-bg-card);
   color: #fff;
   font-size: 1.2rem;
   cursor: pointer;

@@ -10,6 +10,7 @@ This is a personal portfolio website for Emanuel Montenegro, a Frontend Develope
 - **Framer Motion 12.29.2**: Library for animations and transitions.
 - **React Router 7.12.0**: Routing library (included but not actively used for navigation in this SPA).
 - **React Scroll 1.9.3**: Enables smooth scrolling to different sections of the page.
+- **Lucide React 1.11.0**: Icon library used for theme toggle and UI icons.
 
 ### Development Tools
 - **ESLint 9.39.1**: Linting tool for code quality.
@@ -24,6 +25,9 @@ The application follows a single-page application architecture built with React.
 - A root `App` component that renders the main layout.
 - A `LanguageProvider` context for managing multilingual state (English/Spanish).
 - Modular components organized in folders (background, common, layout, sections).
+- Theme toggle support with localStorage persistence and CSS `data-theme` handling.
+- Clickable certification cards that open a modal preview when selected.
+- Responsive header with mobile menu, active section highlighting, and outside-click menu close.
 - Static data stored in JSON files (projects, certifications) and i18n translation files.
 - CSS modules for styling, with global styles and component-specific stylesheets.
 - No backend or server-side rendering; all data is client-side.
@@ -115,9 +119,11 @@ No database is used in this project. Data is stored in static JSON files (`proje
 - **Smooth Scrolling Navigation**: Header links use React Scroll for seamless in-page navigation.
 - **Animated Sections**: Framer Motion provides entrance animations for sections and components.
 - **Project Showcase**: Displays personal projects with descriptions, tech stacks, live demos, and source code links.
-- **Certifications Display**: Shows professional certifications with images and details.
-- **Contact Section**: Includes contact information and a WhatsApp link with pre-filled message.
+- **Certifications Display**: Shows professional certifications with images and details. Users can click a certificate card to open a modal preview.
+- **Theme Toggle**: Dark/light mode switch with localStorage persistence and icon-based control.
+- **Contact Section**: Includes contact information, email links optimized for mobile/desktop, and a WhatsApp link with pre-filled message.
 - **CV Download**: Links to downloadable CVs in English and Spanish.
+- **Responsive Navigation**: Mobile menu with toggle button, active nav state, and outside-click close behavior.
 - **Tech Background**: Animated background component for visual appeal.
 
 ## Usage Flow
@@ -138,7 +144,7 @@ The application does not implement specific error handling mechanisms, as it is 
 - Enhance accessibility (ARIA labels, keyboard navigation).
 - Add unit and integration tests (e.g., using Jest and React Testing Library).
 - Optimize performance further with code splitting and lazy loading.
-- Implement a dark/light theme toggle.
+
 
 ## Author
 - Author: [Emanuel Montenegro](https://emanuelmontenegro.dev)
