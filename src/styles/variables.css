@@ -1,63 +1,55 @@
-:root {
-  /* --- Fonts --- */
+/* --- MODO OSCURO --- */
+:root,
+[data-theme='dark'],
+body[data-theme='dark'] {
+  /* Fonts */
   --font-heading: 'Orbitron', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  /* --- PALETA DARK (Default) --- */
+  /* Paleta Dark */
   --color-bg: #0e0e11;
   --color-bg-card: rgba(255, 255, 255, 0.03);
   --color-primary: #b43aed;
   --color-text: #eaeaea;
   --color-text-dim: #cfcfcf;
   --color-text-muted: #8f8f8f;
-  --hex-opacity: 0.04;
   --color-border: rgba(180, 58, 237, 0.25);
   --color-border-soft: rgba(255, 255, 255, 0.05);
   --color-header-bg: rgba(14, 14, 17, 0.7);
 
-  /* SKILLS DARK */
+  /* Skills & Gradients Dark */
   --color-skill-bg: #141418;
   --color-skill-border: #222222;
-  --color-skill-shadow: rgba(0, 0, 0, 0.5);
-  --color-skill-text-bg: rgba(180, 58, 237, 0.08);
-  --skill-img-filter: grayscale(1) brightness(0.9) invert(0);
-  --skill-img-hover: grayscale(0) brightness(1.15) invert(0);
-
-  /* Gradientes de Fondo (Modo Oscuro) */
   --bg-gradient-1: #040406;
   --bg-gradient-2: #070710;
   --bg-gradient-3: #050507;
-  --hex-filter: none;
   --hex-opacity: 0.04;
+  --hex-filter: none;
+  --skill-img-filter: grayscale(1) brightness(0.9);
+  --skill-img-hover: grayscale(0) brightness(1.15);
 }
 
-[data-theme='light'] {
-  /* --- PALETA LIGHT --- */
+/* --- MODO CLARO --- */
+[data-theme='light'],
+body[data-theme='light'] {
   --color-bg: #f8fafc;
   --color-bg-card: rgba(255, 255, 255, 0.6);
   --color-primary: #8b29b9;
   --color-text: #0f172a;
   --color-text-dim: #334155;
   --color-text-muted: #64748b;
-  --hex-opacity: 0.12;
   --color-border: rgba(139, 41, 185, 0.2);
   --color-border-soft: rgba(0, 0, 0, 0.05);
   --color-header-bg: rgba(255, 255, 255, 0.7);
 
-  /* SKILLS LIGHT */
+  /* Skills & Gradients Light */
   --color-skill-bg: #ffffff;
   --color-skill-border: #e2e8f0;
-  --color-skill-shadow: rgba(0, 0, 0, 0.1);
-  --color-skill-text-bg: rgba(180, 58, 237, 0.1);
-  --skill-img-filter: grayscale(1) brightness(0.2) invert(0); 
-  --skill-img-hover: grayscale(0) brightness(1) invert(0);
-
-  /* Gradientes de Fondo (Modo Claro) */
   --bg-gradient-1: #ffffff; 
   --bg-gradient-2: #f8fafc; 
   --bg-gradient-3: #f1f5f9; 
-
-  /* intensidad de las letras */
   --hex-opacity: 0.15; 
   --hex-filter: invert(1) brightness(0.8) contrast(0.5);
+  --skill-img-filter: grayscale(1) brightness(0.2); 
+  --skill-img-hover: grayscale(0) brightness(1);
 }
