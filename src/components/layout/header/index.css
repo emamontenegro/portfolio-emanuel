@@ -108,8 +108,8 @@
   cursor: pointer;
 }
 
-/* --- MOBILE STYLES (425px) --- */
-@media (max-width: 425px) {
+/* --- MOBILE STYLES --- */
+@media (max-width: 768px) {
   .header {
     padding: 0.8rem 1rem;
   }
@@ -120,7 +120,6 @@
     z-index: 101;
   }
 
-  /* Ocultamos los controles de la barra principal */
   .desktop-actions {
     display: none;
   }
@@ -149,7 +148,6 @@
     transform: translateY(0);
   }
 
-  /* Mostramos los controles dentro del menú */
   .mobile-actions {
     display: flex;
     align-items: center;
@@ -161,7 +159,6 @@
     border-top: 1px solid var(--color-border-soft);
   }
 
-  /* Quitamos margen extra del botón de idioma si lo tuviera */
   .lang-switch {
     margin-right: 0;
   }

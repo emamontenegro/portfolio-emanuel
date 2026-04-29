@@ -5,11 +5,11 @@
 
   /* --- PALETA DARK (Default) --- */
   --color-bg: #0e0e11;
-  --color-bg-card: rgba(255, 255, 255, 0.03); /* Fondo translúcido */
+  --color-bg-card: rgba(255, 255, 255, 0.03);
   --color-primary: #b43aed;
   --color-text: #eaeaea;
-  --color-text-dim: #cfcfcf; /* Para párrafos */
-  --color-text-muted: #8f8f8f; /* Para fechas/instituciones */
+  --color-text-dim: #cfcfcf;
+  --color-text-muted: #8f8f8f;
   --hex-opacity: 0.04;
   --color-border: rgba(180, 58, 237, 0.25);
   --color-border-soft: rgba(255, 255, 255, 0.05);
@@ -19,7 +19,7 @@
   --color-skill-bg: #141418;
   --color-skill-border: #222222;
   --color-skill-shadow: rgba(0, 0, 0, 0.5);
-  --color-skill-text-bg: rgba(180, 58, 237, 0.08); /* Violeta suave para oscuro */
+  --color-skill-text-bg: rgba(180, 58, 237, 0.08);
   --skill-img-filter: grayscale(1) brightness(0.9) invert(0);
   --skill-img-hover: grayscale(0) brightness(1.15) invert(0);
 
@@ -34,12 +34,12 @@
 [data-theme='light'] {
   /* --- PALETA LIGHT --- */
   --color-bg: #f8fafc;
-  --color-bg-card: rgba(255, 255, 255, 0.6); /* Fondo translúcido oscuro */
-  --color-primary: #8b29b9; /* Un violeta un poco más oscuro para contraste */
+  --color-bg-card: rgba(255, 255, 255, 0.6);
+  --color-primary: #8b29b9;
   --color-text: #0f172a;
   --color-text-dim: #334155;
   --color-text-muted: #64748b;
-  --hex-opacity: 0.12; /* Un poco más visible en fondo claro */
+  --hex-opacity: 0.12;
   --color-border: rgba(139, 41, 185, 0.2);
   --color-border-soft: rgba(0, 0, 0, 0.05);
   --color-header-bg: rgba(255, 255, 255, 0.7);
@@ -48,7 +48,7 @@
   --color-skill-bg: #ffffff;
   --color-skill-border: #e2e8f0;
   --color-skill-shadow: rgba(0, 0, 0, 0.1);
-  --color-skill-text-bg: rgba(180, 58, 237, 0.1); /* Violeta suave para claro */
+  --color-skill-text-bg: rgba(180, 58, 237, 0.1);
   --skill-img-filter: grayscale(1) brightness(0.2) invert(0); 
   --skill-img-hover: grayscale(0) brightness(1) invert(0);
 
@@ -57,7 +57,7 @@
   --bg-gradient-2: #f8fafc; 
   --bg-gradient-3: #f1f5f9; 
 
-  /* Bajamos la intensidad de la trama para que no "pise" las letras */
+  /* intensidad de las letras */
   --hex-opacity: 0.15; 
   --hex-filter: invert(1) brightness(0.8) contrast(0.5);
 }
