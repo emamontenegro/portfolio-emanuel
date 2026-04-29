@@ -3,7 +3,10 @@ import { Sun, Moon } from 'lucide-react';
 import './index.css';
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+  const [theme, setTheme] = useState (() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme ? savedTheme : "dark";
+  });
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
